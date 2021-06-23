@@ -1,0 +1,175 @@
+html
+{
+    cursor: url("Images/cursor.png"), url("Images/cursor.cur"), default;
+    height: 100%;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.bhlentrance
+{
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.content-container
+{
+    padding-top: 48px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+
+.excerpt1
+{
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    margin: 64px 80px 0 80px;
+}
+
+.pike-grid
+{
+    padding-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    justify-content: center;
+    column-gap: 60px;
+    row-gap: 26px;
+}
+
+h1, h2
+{
+    font-family: 'ZCOOL KuaiLe', sans-serif;
+}
+
+p
+{
+    line-height: 1.8;
+}
+
+.excerpt1 a, .audioex a, .audioex a:visited, .audioex a:hover, .audioex a:active
+{
+    text-decoration: none;
+    color: #a19c9c;
+}
+
+.audiotour, .bio
+{
+    text-align: left;
+    margin: 48px 80px 0 80px;
+    font-weight: 500;
+}
+
+.bioex, .audioex
+{
+    margin: 0 80px 0 0;
+    font-size: 23px; 
+    font-weight: 100;
+}
+
+.bioex
+{
+    padding-bottom: 80px;
+}
+
+.copyholder
+{
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 12px;
+    font-family: 'Advent Pro', sans-serif;
+    color: #a9a9a9;
+}
+
+.copyholder a, .excerpt1 a, .audioex a
+{
+    text-decoration: none;
+    color: #a9a9a9;
+    transition-property: color;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.copyholder a:hover, .excerpt1 a:hover, .audioex a:hover
+{
+    color: #696969;
+}
+
+@media (max-width: 1200px)
+{
+    .pike-grid
+    {
+        grid-template-columns: repeat(2, 300px);
+        column-gap: 0px;
+    }
+}
+
+@media (max-width: 992px)
+{
+    .content-container, .audioex, .bioex
+    {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .content-container
+    {
+        font-size: 17px;
+    }
+    
+    .bhlentrance
+    {
+        height: 300px;
+    }
+    
+    .excerpt1
+    {
+        margin: 0 50px 0 50px;
+    }
+    
+    .audiotour, .bio
+    {
+        margin-left: 50px;   
+    }
+    
+    .audioex, .bioex
+    {
+        font-size: 17px;
+    }
+    
+    .pike-grid
+    {
+        grid-template-columns: repeat(1, 200px);
+        column-gap: 0px;
+    }
+    
+}
+
+@media (max-width: 480px)
+{
+    .content-container, .audioex, .bioex
+    {
+        font-size: 14px;
+    }
+    
+    .bhlentrance
+    {
+        height: 200px;
+    }
+    
+    .audioex, .bioex
+    {
+        margin: 0;
+    }
+}

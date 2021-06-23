@@ -1,0 +1,152 @@
+.navbar
+{
+    width: 100%;
+    overflow: auto;
+    margin-top: 15px;
+}
+
+.links
+{
+    padding: 0;
+    margin: 0
+    list-style: none;
+}
+
+.links li
+{
+    float: right;
+}
+
+.bucketlogo
+{
+    width: 90px;
+    position: absolute;
+    margin: -10px 0 0 10px;
+}
+
+.mob-navbar
+{
+    visibility: hidden;
+    position: absolute;
+}
+
+.navbar a
+{
+    width: 100px;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    font-family: 'Karla', sans-serif;
+    transform: rotate(180deg);
+    transition: opacity 1s, transform 6s;
+}
+
+.cont
+{
+    overflow: hidden;
+}
+
+.navbar a:hover
+{
+    opacity: 0;
+    transform: translateY(200px);
+}
+
+.topnav 
+{
+    overflow: hidden; 
+    position: relative;
+}
+
+.topnav #myLinks 
+{
+    display: none;
+}
+
+#myLinks a 
+{
+    color: #000;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    background-color: #fff;
+    font-family: 'Karla', sans-serif;
+}
+
+.topnav a.icon 
+{
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    color: #fff;
+    transform: scale(2);
+}
+
+.topnav a:hover 
+{
+    color: #fff;
+}
+
+@keyframes shake
+{
+    0%
+    {
+        transform: rotate(0deg);
+        transform: scale(1);
+    }
+    33%
+    {
+        transform: rotate(15deg);
+    }
+    75%
+    {
+        transform: rotate(-15deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+        transform: scale(1.4);
+    }
+}
+
+@media (max-width: 850px)
+{
+     .bucketlogo
+    {
+        visibility: hidden;
+    }
+    
+    .bucketmob
+    {
+        width: 70px;
+    }
+    
+    .mob-navbar
+    {
+        visibility: visible;
+        position: relative;
+    }
+    
+    .navbar
+    {
+        visibility: hidden;
+        position: absolute;
+        width: 0;
+    }
+    
+    .cont
+    {
+        position: relative;
+        right: 7%;
+    }
+    
+    nav a
+    {
+        font-size: 20px;
+    }
+}
